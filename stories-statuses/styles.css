@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #363062;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  height: 29rem;
+  width: 24rem;
+  background-color: #435585;
+  border-radius: 0.4rem;
+  border: 0.15rem solid #818fb4;
+  position: relative;
+}
+.feed {
+  height: 7em;
+  width: 100%;
+  border-bottom: 0.1rem solid #818fb4;
+  padding: 1em;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.feed::-webkit-scrollbar {
+  display: none;
+}
+.story {
+  border: 0.2rem solid #f5e8c7;
+  height: 5em;
+  width: 5em;
+  overflow: hidden;
+  margin-left: 0.5em;
+  display: inline-block;
+  border-radius: 50%;
+}
+.story img {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+.full-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: none;
+  background-size: cover;
+  background-position: center;
+}
+.full-image button {
+  height: 50px;
+  width: 50px;
+  background-color: #36306231;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
